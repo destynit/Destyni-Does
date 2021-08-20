@@ -22,9 +22,10 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: all 1s ease-in-out;
 
-    :hover {
+    &:hover {
         background-color: #827A5F;
         color: #fff;
     }
@@ -51,33 +52,41 @@ export const Bars = styled(FaBars)`
       transform: translate(-100%, 75%);
       font-size: 1.8rem;
       cursor: pointer;  
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      -o-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;  
- 
+      // transition: all 0.3s ease-in-out; 
+
     }
-`;
+
+    &:hover {
+      animation-name: bars;
+      animation-duration: 2s; 
+    }
+    @keyframes bars {
+      from {color: #827A5F;}
+      to {color: rgba(163, 157, 137, 0.9)}
+    }
+  `;
 
 export const Times = styled(FaTimes)`
   display: none; 
-@media screen and (max-width: 768px) {
-  display: block;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  right: 40px;
-  transform: translate(-100%, 75%);
-  font-size: 1.8rem;
-  cursor: pointer;   
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
+  @media screen and (max-width: 768px) {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
 
-} 
+    &:hover {
+      animation-name: times;
+      animation-duration: 2s; 
+    }
+    @keyframes times {
+      from {color: #fff; }
+      to {color: rgba(163, 157, 137, 0.9);}
+  }
+}
+
 `;
 
 export const Menu = styled.ul`
@@ -98,9 +107,4 @@ export const Menu = styled.ul`
     overflow-x: hidden; 
     padding: 20px;
     transition: 0.5s; 
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
     `;

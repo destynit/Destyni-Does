@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "header": "Where did you go to school and what did you major in?",
+      "body": "I went to San Diego State University and majored in Computer Science! I've always been very tech savvy and thought CS would be a fun challenge to tackle."
+    },
+    {
+      "id": 2,
+      "header": "Why do I blog?",
+      "body": "Growing up amidst the social media boom, I was exposed to various blog platforms at a young age - it was what all the cool kids were doing! Through Myspace, Facebook, and Tumblr, I found such sentimental value in documenting my creations. I find it incredibly heartwarming to look back on past events and projects to remind myself of all the things I have been capable of accomplishing!"
+    },
+    {
+      "id": 3,
+      "header": "What kind of camera do you use?",
+      "body": "My iPhone 12 Pro Max is my go-to, however, I'll interchange with the Canon G7X when I'm feeling a bit fancy. My boyfriend recently just bought me a new camera, the Canon EOS 80D, but I have yet to learn how to use it!"
+    },
+    {
+      "id": 4, 
+      "header": "What is your goal for this blog?",
+      "body": "Not only do I want to share my life and who I am, but I also want this blog to be a reflection of my technical capabilities."
+    }
+  ]
+  

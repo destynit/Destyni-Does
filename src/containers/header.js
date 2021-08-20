@@ -21,8 +21,7 @@ export function HeaderContainer( {children} ) {
                     {open && <Navbar.Times onClick={handleClick}/>}
                     <Navbar.NavLink to={ROUTES.ABOUT} >About Me</Navbar.NavLink>
                     <Navbar.NavLink to={ROUTES.GALLERY} >Gallery</Navbar.NavLink>
-                    <Navbar.NavLink to={ROUTES.EVENTS} >Events</Navbar.NavLink>
-                    <Navbar.NavLink to={ROUTES.FAQS} >FAQs</Navbar.NavLink>
+                    <Navbar.NavLink to={ROUTES.HOMED} >Home</Navbar.NavLink>
                 </Navbar.Menu>
             </Navbar.Nav>
             {children}

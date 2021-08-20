@@ -3,14 +3,16 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background-color: #a39d89;
     display: flex;
-    max-width: 100%;
+    max-width: 100%%;
     flex-direction: column;
     padding: 50px 56px;
     font-family: 'Helvetica', sans-serif;
     justify-content: center;
+    margin: 0;
 
     @media (max-width: 1080px) {
         padding: 70px 30px;
+        max-width: 100%;
     }
 `;
 
