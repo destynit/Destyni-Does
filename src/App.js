@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import {Home, HomeD, About, Faqs} from "./pages"
+import {Home, HomeD, About, Faqs, Gallery} from "./pages"
 
 export default function App() {
     return (
@@ -21,8 +21,11 @@ export default function App() {
             <Route path="/contact">
                 <p> I will be the contact page! </p>
             </Route>
-            
+            <Route path="/gallery">
+                <Gallery />
+            </Route>
         </Switch>
     </Router>
     )
 }
+ 
