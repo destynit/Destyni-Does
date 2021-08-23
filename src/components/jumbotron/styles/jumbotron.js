@@ -6,20 +6,25 @@ export const Container = styled.div``;
 
 export const Title = styled.h1`
     position: absolute;
-    font-size: 50px;
+    font-size: 90px;
     color: #fff;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media(max-width: 600px) {
+    @media screen and (max-width: 1100px) {
         color: #6e6a5c;
-        font-size: 36px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 700px) {
+        color: #6e6a5c;
+        font-size: 40px;
     }
 `;
 
 export const Subtitle = styled.h2`
-    font-size: 26px;
+    font-size: 45px;
     font-weight: normal;
     line-height: normal;
     color: #fff;
@@ -29,9 +34,14 @@ export const Subtitle = styled.h2`
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 1100px) {
         color: #6e6a5c;
-        font-size: 18px;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 700px) {
+        color: #6e6a5c;
+        font-size: 20px;
     }
 `;
 
@@ -47,7 +57,7 @@ export const Button = styled(ReachRouterLink)`
     transform: translate(-50%, -50%);
     background-color: #a39d89;
     color: #fff;
-    font-size: 16px;
+    font-size: 25px;
     text-decoration: none;
     padding: 12px 24px;
     border: none;
@@ -58,5 +68,13 @@ export const Button = styled(ReachRouterLink)`
     &:hover {
         background-color: #6e6a5c;
         color: #fff;
+    }
+
+    @media screen and (max-width: 1100px) {
+        font-size: 17px;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 11px;
     }
 `;
