@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background-color: #a39d89;
+    background-color: #FDDDD8;
     display: flex;
     max-width: 100%%;
     flex-direction: column;
     padding: 50px 56px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'futura', sans-serif;
     justify-content: center;
     margin: 0;
 
@@ -32,23 +32,22 @@ export const Row = styled.div`
     }
 `;
 export const Link = styled.a`
-    color: #fff;
+    color: #364045;
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 12px;
 `; 
 
 export const Title = styled.p`
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
-    color: #fff;
-    font-family: "Brush Script MT", Cursive;
+    color: #364045;
     justify-content: center;
 `;
 
 export const Text = styled.p`
     font-size: 13px;
-    color: #6e6a5c;
+    color: #364045;
     margin-bottom: 20px;
 
 `;

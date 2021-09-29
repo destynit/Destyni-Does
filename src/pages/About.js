@@ -1,10 +1,12 @@
 import React from 'react'
-import {HeaderContainer} from "../containers/header"
+import {NavbarContainer} from "../containers/navbar"
 import {FooterContainer} from "../containers/footer"
+import { AboutContainer } from '../containers/about'
 export default function About() {
     return (
         <>
-            <HeaderContainer />
+            <NavbarContainer />
+            <AboutContainer />
             <FooterContainer />
         </>
     )

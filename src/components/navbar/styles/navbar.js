@@ -2,21 +2,49 @@ import styled from "styled-components"
 import { NavLink as Link } from "react-router-dom";
 import {FaBars, FaTimes} from "react-icons/fa"
 
-export const Container = styled.div``;
-
-
-export const Nav = styled.nav`
-    background-color: #fff;
-    height: 85px;
-    display: flex;
-    text-align: center;
-    overflow: hidden;
-    padding-right: 20px;
-    margin-top: 0;
+export const Container = styled.div`
+  font-family: 'Futura', sans-serif;
+  display: flex;
 `;
 
+export const Nav = styled.nav`
+    display: flex;
+    background-color: #FFF9F9;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+
+`;
+
+export const Logo = styled.img`
+  width: 250px;
+  height: 100px;
+  padding: 20px 60px;
+`;
+
+export const LogoLink = styled(Link)``;
+
+export const Menu = styled.ul`
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+
+  @media screen and (max-width: 768px) { 
+    display: ${({open}) => open ? "block" : "none"};
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: #827A5F;    
+    overflow-x: hidden; 
+    padding: 20px;
+    transition: 0.5s; 
+    `;
+
 export const NavLink = styled(Link)`
-    color: #827A5F;
+    color: #364045;
     display: flex;
     font-family: 'Khula', sans-serif;
     text-decoration: none;
@@ -26,13 +54,11 @@ export const NavLink = styled(Link)`
     transition: all 1s ease-in-out;
 
     &:hover {
-        background-color: #827A5F;
-        color: #fff;
+        color: #F88677;
     }
 
     &.active {
-      background-color: #827A5F;
-      color: #fff;
+      color: #F88677;
     }
 
     @media screen and (max-width: 768px) { 
@@ -88,23 +114,3 @@ export const Times = styled(FaTimes)`
 }
 
 `;
-
-export const Menu = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: -24px;
-  
-  @media screen and (max-width: 768px) { 
-    display: ${({open}) => open ? "block" : "none"};
-    margin: 0px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0; 
-    left: 0;
-    background-color: #827A5F;    
-    overflow-x: hidden; 
-    padding: 20px;
-    transition: 0.5s; 
-    `;

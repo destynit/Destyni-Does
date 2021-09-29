@@ -1,5 +1,4 @@
 export const HOME = "/";
-export const FAQS =  "/faqs"
+export const WORK = "/work"
 export const ABOUT = "/about"
-export const GALLERY = "/gallery"
-export const HOMED = "/HOME"
+export const CONTACT = "/contact"

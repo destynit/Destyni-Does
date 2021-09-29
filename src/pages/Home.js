@@ -1,6 +1,14 @@
 import React from 'react'
-import {JumbotronContainer} from "../containers/jumbotron"
+import { NavbarContainer } from '../containers/navbar'
+import {FooterContainer} from '../containers/footer'
+import { IntroductionContainer } from '../containers/introduction'
 
 export default function Home() {
-    return <JumbotronContainer />
+    return (
+        <>
+            <NavbarContainer />
+            <IntroductionContainer />   
+            <FooterContainer />
+        </>
+    )
 }

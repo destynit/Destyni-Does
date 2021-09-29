@@ -7,7 +7,7 @@ export  function FooterContainer() {
             <Footer.Row>
                 <Footer.Column>
                     <Footer.Title>Some More</Footer.Title>
-                    <Footer.Link href={ROUTES.FAQS}>FAQs</Footer.Link>
+                    {/* <Footer.Link href={ROUTES.FAQS}>FAQs</Footer.Link> */}
                     <Footer.Link href="#">About Me</Footer.Link>
                     <Footer.Link href="#">Gallery</Footer.Link>
                     <Footer.Link href="#">Events</Footer.Link>
